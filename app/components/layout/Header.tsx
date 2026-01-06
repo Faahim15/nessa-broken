@@ -22,9 +22,9 @@ const Header = () => {
 
 
     return (
-        <main className='bg-[#2B2F36]'>
+        <main className='absolute top-0 left-0  w-full z-50 bg-black/45'>
 
-            <nav className='container mx-auto py-2  '>
+            <nav className='container mx-auto py-2  backdrop-blur-md '>
                 <div className="xl:container mx-auto flex items-center justify-between md:px-2 ">
                     {/* Logo  */}
                     <Link href="/" className="flex items-center gap-2 h-13.5 w-24.5">

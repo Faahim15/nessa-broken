@@ -1,6 +1,12 @@
 import logo from "@/public/images/logo.png"
+import { Input } from "antd";
 import Image from "next/image"
 import Link from "next/link"
+import Button from "../common/Button/Button";
+import { LuFacebook } from "react-icons/lu";
+import { FiTwitter } from "react-icons/fi";
+import { CiMail } from "react-icons/ci";
+import { FaInstagram } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -14,10 +20,10 @@ const Footer = () => {
     ];
     return (
         <div className="bg-[#0C0E0F] py-10">
-            <div className="container mx-auto">
+            <div className="container mx-auto px-2">
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
-                    <div className="space-y-5">
-                        <Image src={logo} height={500} width={500} alt="logo" className="h-19 w-34.5" />
+                    <div className="space-y-5 ">
+                        <Image src={logo} height={500} width={500} alt="logo" className="h-19 w-34.5 " />
                         <div className="space-y-2">
                             <p className="text-[16px]">A fractured reality where identity, lss, and my interwine in stores of profound emotion.</p>
                             <p className="text-[#9D9A97] text-[14px]">"Every Fragment tells a story."</p>
@@ -44,9 +50,30 @@ const Footer = () => {
                     <div className="space-y-5">
                         <p className="text-[20px] font-semibold ">Stay Connected</p>
                         <p className="text-[#9D9A97] text-[14px]">Subscribe to receive updates about new releases. character insight, and exclusive content</p>
+                        <Input className="bg-black" placeholder="Basic usage" />
+                        <Button name={"Subscribed"}></Button>
+                    </div>
+                    {/* Connect With Us */}
+                    <div className="space-y-5">
+                        <p className="text-[20px] font-semibold ">Connect With Us</p>
+                        <p className="text-[#9D9A97] text-[14px]">Follow our journey through the broken world on social media.</p>
+                        {/* Social Media logo */}
+                        <div className="flex items-center gap-5">
+                            <div className="border-[#4F4F59] border p-2 rounded-sm cursor-pointer">
+                                <LuFacebook size={25} />
+                            </div>
+                            <div className="border-[#4F4F59] border p-2 rounded-sm cursor-pointer">
+                                <FiTwitter size={25} /> 
+                            </div>
+                            <div className="border-[#4F4F59] border p-2 rounded-sm cursor-pointer">
+                                <FaInstagram size={25} />
+                            </div>
+                            <div className="border-[#4F4F59] border p-2 rounded-sm cursor-pointer">
+                                <CiMail size={25} />
+                            </div>
+                        </div>
 
                     </div>
-                    <div></div>
                 </div>
                 {/* Copyright section */}
 
