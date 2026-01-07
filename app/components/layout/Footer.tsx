@@ -35,7 +35,7 @@ const Footer = () => {
                         <ul className="space-y-2">
                             {menuItems.map((item) => (
                                 <li key={item.name} className="flex items-center">
-                                    <span className="w-1 h-1 bg-white rounded-full mr-3 flex-shrink-0"></span>
+                                    <span className="w-1 h-1 bg-white rounded-full mr-3 shrink-0"></span>
                                     <Link
                                         href={item.path}
                                         className=" hover:text-gray-300 text-[15px] transition-colors"
