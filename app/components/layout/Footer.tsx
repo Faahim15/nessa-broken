@@ -19,8 +19,8 @@ const Footer = () => {
         { name: "Contact Us", path: "/contact" },
     ];
     return (
-        <div className="bg-[#0C0E0F] py-10">
-            <div className="container mx-auto px-2">
+        <div className="bg-[#0C0E0F] py-10 px-2 md:px-0">
+            <div className="container mx-auto px-2  border-b border-[#2B2F36] pb-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
                     <div className="space-y-5 ">
                         <Image src={logo} height={500} width={500} alt="logo" className="h-19 w-34.5 " />
@@ -63,7 +63,7 @@ const Footer = () => {
                                 <LuFacebook size={25} />
                             </div>
                             <div className="border-[#4F4F59] border p-2 rounded-sm cursor-pointer">
-                                <FiTwitter size={25} /> 
+                                <FiTwitter size={25} />
                             </div>
                             <div className="border-[#4F4F59] border p-2 rounded-sm cursor-pointer">
                                 <FaInstagram size={25} />
@@ -75,8 +75,19 @@ const Footer = () => {
 
                     </div>
                 </div>
-                {/* Copyright section */}
 
+
+            </div>
+            {/* Copyright section */}
+            <div className="container mx-auto mt-5 flex flex-col md:flex-row justify-between gap-4 items-center">
+                <div>
+                    <p className="text-xs md:text-sm text-[#9D9A97]">© 2026 The City Of Feather Fields. All rights reserved.</p>
+                </div>
+                <div className="flex items-center gap-5 text-xs md:text-sm text-[#9D9A97]">
+                    <p>About Us</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms & Condition</p>
+                </div>
             </div>
         </div>
     )

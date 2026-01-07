@@ -6,8 +6,8 @@ import { IoMdArrowForward } from "react-icons/io"
 
 const LatestRelease = () => {
     return (
-        <div className="bg-[#0C0E0F] py-16">
-            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2  max-w-6xl justify-center items-center">
+        <div className="bg-[#0C0E0F] py-16 px-2 md:px-0">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-3  max-w-6xl justify-center items-center">
                 <div>
                     <Image height={500} width={500} src={latest} alt='latest' />
 

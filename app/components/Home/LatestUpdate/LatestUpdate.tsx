@@ -16,7 +16,7 @@ const LatestUpdate = () => {
         }
     ]
     return (
-        <div className="bg-[#131417]">
+        <div className="bg-[#131417] px-2 md:px-0">
             <div className="container mx-auto  max-w-6xl py-14">
                 {/* Latest Update Header Text */}
                 <div className='flex flex-col items-center'>

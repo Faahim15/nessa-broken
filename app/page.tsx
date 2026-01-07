@@ -12,6 +12,7 @@ export default function Home() {
       <FeaturedCharacther/>
       <LatestRelease/>
       <LatestUpdate/>
+
     </div>
   );
 }

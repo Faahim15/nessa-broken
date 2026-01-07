@@ -8,11 +8,11 @@ const FeaturedCharacther = () => {
         <div className=' bg-[#131417] '>
             {/* Main Container  */}
 
-            <div className='container mx-auto  py-10'>
+            <div className='container mx-auto  py-10 px-2 md:px-0'>
 
                 {/* Feature characther Header Text */}
                 <div className='flex flex-col items-center'>
-                    <h2 className='text-[40px] font-[Georgia]'>Featured Characters</h2>
+                    <h2 className='text-[28px] md:text-[40px] font-[Georgia]'>Featured Characters</h2>
                     <p className='text-[#9D9A97]'>Souls navigating the broken world</p>
                 </div>
 
