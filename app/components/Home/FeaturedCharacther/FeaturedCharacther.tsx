@@ -3,6 +3,7 @@ import charImg2 from "@/public/images/char2.png"
 import Image from 'next/image'
 import Link from 'next/link'
 import { MdOutlineArrowForward } from 'react-icons/md'
+import CharactherCard from "../../common/CharactherCard/CharactherCard"
 const FeaturedCharacther = () => {
     return (
         <div className=' bg-[#131417] '>
@@ -18,23 +19,11 @@ const FeaturedCharacther = () => {
 
                 {/* All Charecther image and title */}
                 <div className='max-w-5xl mx-auto' >
-                    <div className='grid grid-cols-1 md:grid-cols-2 gap-5 py-10'>
-                        <div className='relative'>
-                            <Image height={500} width={500} src={charImg1} alt='char' />
-                            <div className='absolute bottom-4 left-4'>
-                                <h1 className='text-[24px] font-semibold'>Nessa</h1>
-                                <p className='text-[#9D9A97]'>The Fractured Soul</p>
-                            </div>
-
-                        </div>
-                        <div className='relative'>
-                            <Image height={500} width={500} src={charImg2} alt='char' />
-                            <div className='absolute bottom-4 left-4'>
-                                <h1 className='text-[24px] font-semibold'>Kael</h1>
-                                <p className='text-[#9D9A97]'>The Shadow Walker</p>
-                            </div>
-
-                        </div>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 py-10'>
+                        <CharactherCard title="Nessa" description="The Fractured Soul" image={charImg1} height={150} />
+                        <CharactherCard title="Kael" description="The Shadow Walker" image={charImg2}  height={150} />
+                       
+                    
                     </div>
                     {/* View all characther button */}
                     <button className='flex items-center  justify-center w-full hover:text-[#9D9A97] duration-500'><Link href={"/all-characther"} className='flex items-center gap-1'>View All Characters <MdOutlineArrowForward size={20} /></Link></button>

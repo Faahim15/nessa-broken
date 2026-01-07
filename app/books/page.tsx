@@ -3,16 +3,14 @@ import BookCard from '../components/common/BookCard/BookCard'
 import latest from "@/public/images/latest.png"
 import img3 from "@/public/images/book2.png"
 import img2 from "@/public/images/book3.png"
+import PageHeading from '../components/common/PageHeading/PageHeading'
 
 
 const BooksPage = () => {
     return (
         <div>
             {/* Books page header */}
-            <div className='bg-[#131417] py-12'>
-                <h1 className='text-center font-[Georgia] text-[72px]'>Books</h1>
-                <p className='text-center text-[#9D9A97]'>Explore the stories of Nessa's Broken World</p>
-            </div>
+            <PageHeading title='Books' description='Explore the stories of Nessa Broken World' />
 
             <h1 className='text-center font-[georgia] bg-[#0C0E0F] py-5 text-[40px]'>Featured Release</h1>
 
