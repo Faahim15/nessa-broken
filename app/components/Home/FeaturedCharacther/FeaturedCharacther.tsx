@@ -1,8 +1,8 @@
-import React from 'react'
 import charImg1 from "@/public/images/char1.png"
 import charImg2 from "@/public/images/char2.png"
-import { FiVideo } from 'react-icons/fi'
 import Image from 'next/image'
+import Link from 'next/link'
+import { MdOutlineArrowForward } from 'react-icons/md'
 const FeaturedCharacther = () => {
     return (
         <div className=' bg-[#131417] '>
@@ -35,9 +35,12 @@ const FeaturedCharacther = () => {
                             </div>
 
                         </div>
-                      
                     </div>
+                    {/* View all characther button */}
+                    <button className='flex items-center  justify-center w-full hover:text-[#9D9A97] duration-500'><Link href={"/all-characther"} className='flex items-center gap-1'>View All Characters <MdOutlineArrowForward size={20} /></Link></button>
+
                 </div>
+
 
 
             </div>
