@@ -1,18 +1,21 @@
+"use client"
 import Image, { StaticImageData } from 'next/image'
 
 interface ICard {
   title: string,
   description: string,
   image: StaticImageData,
-  height : number
+  height : number,
+  onClick: () => void
 }
 
-const CharactherCard = ({ image, title, description , height }: ICard) => {
+const CharactherCard = ({ image, title, description , height , onClick }: ICard) => {
   return (
-    <div>
+    <div onClick={onClick} className="cursor-pointer">
       <div className='relative'>
        
-        <div className={`relative w-full h-${height}`}>
+        <div className={`relative w-full h-150 `}
+        >
           <Image
             className="object-cover rounded-md"
              src={image} alt='char'
