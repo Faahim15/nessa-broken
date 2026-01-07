@@ -12,7 +12,7 @@ const Header = () => {
 
   const menuName = [
     { name: "Home", path: "/" },
-    { name: "Book", path: "/book" },
+    { name: "Books", path: "/books" },
     { name: "Characther", path: "/characther" },
     { name: "World", path: "/world" },
     { name: "Blog", path: "/blog" },
@@ -28,7 +28,7 @@ const Header = () => {
     <>
       {/* HEADER BAR */}
       <header className="fixed top-0 left-0 w-full z-100 bg-black/60 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+        <div className="container mx-auto flex items-center justify-between px-4 py-3">
           <Link href="/" className="w-24">
             <Image src={logo} alt="logo" />
           </Link>

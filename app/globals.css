@@ -25,6 +25,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.px-4 {
+    padding-inline: calc(var(--spacing) * 0);
+}
+
 
 
 /* ant desing */
