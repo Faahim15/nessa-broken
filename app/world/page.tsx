@@ -3,6 +3,7 @@ import img from "@/public/images/world.png"
 import img2 from "@/public/images/char3.png"
 import Image from 'next/image'
 import CoreTheme from '../components/CoreTheme/CoreTheme'
+import VisualAtmosphere from '../components/VisualAtmosphere/VisualAtmosphere'
 
 const WorldPage = () => {
 
@@ -45,6 +46,8 @@ const WorldPage = () => {
                 </div>
 
                 <CoreTheme/>
+
+                <VisualAtmosphere/>
             </div>
         </>
     )
