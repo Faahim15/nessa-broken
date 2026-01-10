@@ -85,9 +85,10 @@ const ContactPage = () => {
                 <div className='bg-[#131417] text-center py-8 mt-10'>
                     <h4 className='text-3xl'>"In every conversation, we discover new fragments of meaning."</h4>
                     <p className='text-[#9D9A97]'>— From the Archives of the Broken World</p>
+
                 </div>
             </div>
-        </div>
+        </div> 
     )
 }
 
