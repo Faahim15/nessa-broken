@@ -1,6 +1,9 @@
 "use client";
 
-import { Image } from "antd";
+import char3 from "@/public/images/char3.png";
+import book2 from "@/public/images/latest.png";
+import world from "@/public/images/world.png";
+import Image, { StaticImageData } from "next/image";
 import { BiCalendar } from "react-icons/bi";
 import { BsArrowLeft } from "react-icons/bs";
 
@@ -8,7 +11,7 @@ interface BlogPostData {
   title: string;
   createdAt: string; // 2026-01-10T04:06:07.226Z
   content: string[];
-  images: string[];
+  images: StaticImageData[];
 }
 const postData: BlogPostData = {
   title: "Themes of Identity and Memory",
@@ -21,17 +24,13 @@ const postData: BlogPostData = {
     "The world itself acts as a character in this exploration of identity. Its broken geography, where familiar landmarks exist alongside impossible vistas, challenges the characters' sense of reality. Just as the world is fractured, so too are the identities of those who inhabit it, forcing them to question what is real and what is remembered.",
     "Through it all, the story suggests that identity is not something to be recovered but something to be rebuilt. Like the world around them, the characters must learn to exist in this new reality, carrying their memories not as burdens but as building blocks for who they will become.",
   ],
-  images: [
-    "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&h=600&fit=crop",
-    "https://images.unsplash.com/photo-1579547945413-497e1b99dac0?w=800&h=400&fit=crop",
-    "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=800&h=400&fit=crop",
-  ],
+  images: [char3, book2, world],
 };
 
 export default function BlogDetails() {
   return (
     <section className="bg-black text-white">
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-6 py-8">
         {/* Back Button */}
         <button className="flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
           <BsArrowLeft size={20} />
@@ -39,40 +38,31 @@ export default function BlogDetails() {
         </button>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 mb-8 max-h-[550px] overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-6 mb-8 md:max-h-137.5 overflow-hidden">
           {/* First Image (Takes up 2 rows) */}
-          <div className="col-span-1 row-span-2 h-full overflow-hidden rounded-lg">
+          <div className="col-span-1 md:row-span-2 h-full overflow-hidden rounded-lg">
             <Image
               src={postData.images[0]}
               alt="Vintage camera"
               className="w-full h-full object-cover rounded-lg"
-              height="auto"
-              width="auto"
-              preview={false}
             />
           </div>
 
           {/* Second Image */}
-          <div className="col-span-1 row-span-1 h-full overflow-hidden rounded-lg">
+          <div className="col-span-1 md:row-span-1 h-full overflow-hidden rounded-lg">
             <Image
               src={postData.images[1]}
               alt="World map"
               className="w-full h-full object-cover rounded-lg"
-              height="auto"
-              width="auto"
-              preview={false}
             />
           </div>
 
           {/* Third Image */}
-          <div className="col-span-1 row-span-1 h-full overflow-hidden rounded-lg">
+          <div className="col-span-1 md:row-span-1 h-full overflow-hidden rounded-lg">
             <Image
               src={postData.images[2]}
               alt="Open book"
               className="w-full h-full object-cover rounded-lg"
-              height="auto"
-              width="auto"
-              preview={false}
             />
           </div>
         </div>
@@ -84,7 +74,7 @@ export default function BlogDetails() {
         </div>
 
         {/* Title */}
-        <h1 className="text-4xl md:text-6xl font-bold mb-8">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-8 font-inter">
           {postData.title}
         </h1>
 
