@@ -11,22 +11,22 @@ const CoreTheme = () => {
         {
             title: "Identity",
             description: "In a fractured world, the question Who am I? becomes both a burden and a liberation. Our characters struggle with the pieces of themselves they've lost and the selves they're becoming.",
-            icon: <IoMdHeartEmpty />
+            icon: <IoMdHeartEmpty size={25} color='#2B2F36'  />
         },
         {
             title: "Loss",
             description: "Every ending carries the weight of what could have been. Loss shapes the landscape of this world—not as tragedy alone, but as transformation and the space for new beginnings.",
-            icon: <IoEyeOutline />
+            icon: <IoEyeOutline size={25} color='#2B2F36' />
         },
         {
             title: "Myth & Reality",
-            description: "The boundaries between legend and truth dissolve. Ancient myths bleed into present reality, and what was once dismissed as fantasy becomes the foundation of existence.",
-            icon: <HiOutlineCube />
+            description: "In a fractured world, the question Who am I? becomes both a burden and a liberation. Our characters struggle with the pieces of themselves they've lost and the selves they're becoming.",
+            icon: <HiOutlineCube size={25} color='#2B2F36' />
         },
         {
             title: "Choices",
             description: "Every decision fractures reality in subtle ways. The choices we make ripple through time, creating new paths while closing others forever.",
-            icon: <BsCollection />
+            icon: <BsCollection size={25} color='#2B2F36' />
         },
     ]
     return (
@@ -38,18 +38,16 @@ const CoreTheme = () => {
                     <p className='text-[#9D9A97]'>The emotional foundations of a broken world</p>
                 </div>
                 {/* Core theme content */}
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mt-10'>
+                <div className='grid grid-cols-1 md:grid-cols-2 items-stretch gap-5 mt-10 px-2 md:px-0'>
 
                     {
                         coreData?.map((item, i) => {
-                            return <div key={i} className='bg-[#2B2F36] grid grid-cols-1 md:grid-cols-2 p-4 rounded-xl'>
-                                <div>
-                                    <div>{item.icon}</div>
+                            return <div key={i} className='bg-[#2B2F36] md:flex  items-center gap-5 p-4 rounded-xl h-full'>
+                                    <div className='bg-[#131417] p-2 rounded-xl w-fit'>{item.icon}</div>
                                     <div>
-                                        <h2>{item?.title}</h2>
-                                        <p>{item?.description}</p>
+                                        <h2 className='text-[24px] font-semibold mb-2'>{item?.title}</h2>
+                                        <p className='text-[#9D9A97] text-[14px] leading-6'>{item?.description}</p>
                                     </div>
-                                </div>
                             </div>
                         })
                     }
