@@ -16,7 +16,7 @@ const BooksPage = () => {
 
             {/* Feature Release Section */}
             <FeatureRelease
-                buttonLink="/books/the-fracture"
+                buttonLink={`/books/1`}
                 badge={"available"}
                 image={latest} title='The Fracture'
                 description='In a world where reality itself is coming undone, Nessa must confront the memories she tried to forget and the future she never imagined As the fractures in her world deepen she discovers that the only way forward is through the broken pieces of her past'
@@ -26,9 +26,9 @@ const BooksPage = () => {
             <div className='bg-[#131417] px-2 md:px-0'>
                 <p className='text-center font-[georgia] text-[40px] pt-10'>All Books</p>
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-14 container mx-auto py-10 '>
-                    <BookCard title='The Fracture' description='In a world where reality itself is coming undone, Nessa must confront the memories she tried to forget. A haunting exploration of identity and survival.' image={latest} />
-                    <BookCard title='Echoes of the Void' description='The void calls to those who listen. A tale of sacrifice, redemption, and the price of power in a world that has forgotten compassion.' image={img3} />
-                    <BookCard title='Between the Cracks' description='Lost between worlds, a wanderer searches for meaning in the fragments of a shattered reality. What waits in the spaces we fear to tread?' image={img2} />
+                    <BookCard id="1" title='The Fracture' description='In a world where reality itself is coming undone, Nessa must confront the memories she tried to forget. A haunting exploration of identity and survival.' image={latest} />
+                    <BookCard id="2" title='Echoes of the Void' description='The void calls to those who listen. A tale of sacrifice, redemption, and the price of power in a world that has forgotten compassion.' image={img3} />
+                    <BookCard id="3" title='Between the Cracks' description='Lost between worlds, a wanderer searches for meaning in the fragments of a shattered reality. What waits in the spaces we fear to tread?' image={img2} />
                 </div>
             </div>
  
