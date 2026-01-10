@@ -29,7 +29,7 @@ const FeaturedCharacther = () => {
 
                     </div>
                     {/* View all characther button */}
-                    <button className='flex items-center  justify-center w-full hover:text-[#9D9A97] duration-500'><Link href={"/all-characther"} className='flex items-center gap-1'>View All Characters <MdOutlineArrowForward size={20} /></Link></button>
+                    <button className='flex items-center  justify-center w-full hover:text-[#9D9A97] duration-500'><Link href={"/characther"} className='flex items-center gap-1'>View All Characters <MdOutlineArrowForward size={20} /></Link></button>
 
                 </div>
 
