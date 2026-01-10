@@ -26,7 +26,7 @@ body {
 }
 
 .px-4 {
-    padding-inline: calc(var(--spacing) * 0);
+  padding-inline: calc(var(--spacing) * 0);
 }
 
 
@@ -35,8 +35,8 @@ body {
 /* ant desing */
 
 :where(.css-dev-only-do-not-override-iecf5o).ant-input-outlined {
-   background-color: #131417 !important;
-   border-color: #4F4F59 !important;
+  background-color: #131417 !important;
+  border-color: #4F4F59 !important;
 }
 
 :where(.css-dev-only-do-not-override-iecf5o).ant-input {
@@ -45,11 +45,30 @@ body {
 
 /* Input Field */
 
-:where(.css-dev-only-do-not-override-iecf5o).ant-form-item .ant-form-item-label >label {
-  color : white
+:where(.css-dev-only-do-not-override-iecf5o).ant-form-item .ant-form-item-label>label {
+  color: white
 }
 
 .white-placeholder::placeholder {
   color: #ffffff !important;
-  opacity: 1 !important; /* Very important – Antd uses low opacity by default */
+  opacity: 1 !important;
+  /* Very important – Antd uses low opacity by default */
+}
+
+/* Cusotm modal for book detials */
+
+.custom-modal .ant-modal-content {
+  background-color: #131417;
+}
+
+:where(.css-dev-only-do-not-override-iecf5o).ant-modal .ant-modal-container {
+  background-color: #131417;
+}
+
+:where(.css-dev-only-do-not-override-iecf5o).ant-modal .ant-modal-close {
+  color: white;
+}
+
+:where(.css-dev-only-do-not-override-iecf5o).ant-modal .ant-modal-close:hover {
+  color: white !important;
 }
