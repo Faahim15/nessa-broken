@@ -42,3 +42,14 @@ body {
 :where(.css-dev-only-do-not-override-iecf5o).ant-input {
   color: white;
 }
+
+/* Input Field */
+
+:where(.css-dev-only-do-not-override-iecf5o).ant-form-item .ant-form-item-label >label {
+  color : white
+}
+
+.white-placeholder::placeholder {
+  color: #ffffff !important;
+  opacity: 1 !important; /* Very important – Antd uses low opacity by default */
+}

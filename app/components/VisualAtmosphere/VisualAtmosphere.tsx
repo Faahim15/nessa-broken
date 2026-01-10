@@ -10,7 +10,7 @@ const VisualAtmosphere = () => {
     return (
         <div className='bg-[#0C0E0F] py-12 '>
             <div className='max-w-7xl mx-auto '>
-                {/* Core theme heading */}
+                {/* Visual Atmosphere heading */}
                 <div className='text-center'>
                     <p className='font-[georgia]  text-[40px]'>Visual Atmosphere</p>
                     <p className='text-[#9D9A97]'>The mood and essence of our world</p>

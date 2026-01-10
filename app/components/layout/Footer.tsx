@@ -84,9 +84,11 @@ const Footer = () => {
                     <p className="text-xs md:text-sm text-[#9D9A97]">© 2026 The City Of Feather Fields. All rights reserved.</p>
                 </div>
                 <div className="flex items-center gap-5 text-xs md:text-sm text-[#9D9A97]">
-                    <p>About Us</p>
-                    <p>Privacy Policy</p>
-                    <p>Terms & Condition</p>
+                    <Link href={"/about-us"}>About Us</Link>
+                    <Link href={"/privacy-policy"}>Privacy Policy</Link>
+                    <Link href={"/terms-and-conditions"}>Terms & Condition</Link>
+                   
+
                 </div>
             </div>
         </div>
