@@ -20,11 +20,11 @@ const Banner = () => {
                 </p>
                 <div className="flex flex-col md:flex-row items-center  gap-2 md:gap-5 mt-4">
                     <Link href={"/books"}>
-                        <button className="bg-[#2B2F36] py-2 px-5 rounded-md  cursor-pointer flex items-center shadow-2xl  gap-1">Explore Books
-                            <IoMdArrowForward size={20} />
+                        <button className="bg-[#2B2F36] group transition-all duration-300  py-2 px-5 rounded-md  cursor-pointer flex items-center shadow-2xl  gap-1">Explore Books
+                            <IoMdArrowForward size={20} className="transition-transform duration-300 group-hover:translate-x-2" />
                         </button>
                     </Link>
-                    <Link href={"/characther"}><button className="border-[#2B2F36] border rounded-md py-2 px-2 bg-white/5 cursor-pointer">Meet the Characthers</button></Link>
+                    <Link href={"/characther"}><button className="border-[#2B2F36] hover:bg-white/20 transition-all duration-300 border rounded-md py-2 px-2 bg-white/5 cursor-pointer">Meet the Characthers</button></Link>
   
 
 
