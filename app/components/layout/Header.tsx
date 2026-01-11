@@ -9,6 +9,9 @@ import logo from "@/public/images/logo.png"
 const Header = () => {
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
+  const [showHeader, setShowHeader] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
+
 
   const menuName = [
     { name: "Home", path: "/" },
@@ -19,15 +22,53 @@ const Header = () => {
     { name: "Contact", path: "/contact" },
   ]
 
-  // scroll lock
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto"
   }, [menuOpen])
 
+
+
+useEffect(() => {
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY
+
+    if (currentScrollY < 80) {
+      setShowHeader(true)
+      setLastScrollY(currentScrollY)
+      return
+    }
+
+    const diff = currentScrollY - lastScrollY
+
+    if (diff > 0) {
+      if (currentScrollY > 100 && currentScrollY < 700) {
+        setShowHeader(false)
+      }
+
+      if (currentScrollY >= 700) {
+        setShowHeader(true)
+      }
+    }
+
+    setLastScrollY(currentScrollY)
+  }
+
+  window.addEventListener("scroll", handleScroll)
+  return () => window.removeEventListener("scroll", handleScroll)
+}, [lastScrollY])
+
+
+
+
+
   return (
     <>
       {/* HEADER BAR */}
-      <header className="fixed top-0 left-0 w-full z-100 bg-black/60 backdrop-blur-md">
+      <header
+        className={`fixed top-0 left-0 w-full z-100 bg-black/60 backdrop-blur-md
+  transform transition-all duration-300
+  ${showHeader ? "translate-y-0" : "-translate-y-full"}`}
+      >
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
           <Link href="/" className="w-24">
             <Image src={logo} alt="logo" />
@@ -39,11 +80,10 @@ const Header = () => {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`${
-                  pathname === link.path
-                    ? "text-white border-b border-white"
-                    : "text-gray-400"
-                }`}
+                className={`${pathname === link.path
+                  ? "text-white border-b border-white"
+                  : "text-gray-400"
+                  }`}
               >
                 {link.name}
               </Link>
