@@ -1,4 +1,5 @@
 import banner from "@/public/images/banner.png"
+import Link from "next/link"
 import { IoMdArrowForward } from "react-icons/io"
 
 const Banner = () => {
@@ -18,10 +19,13 @@ const Banner = () => {
                     "In the spaces between what was and what could be, we find ourselves."
                 </p>
                 <div className="flex flex-col md:flex-row items-center  gap-2 md:gap-5 mt-4">
-                    <button className="bg-[#2B2F36] py-2 px-5 rounded-md  cursor-pointer flex items-center shadow-2xl  gap-1">Explore Books
-                        <IoMdArrowForward size={20} />
-                    </button>
-                    <button className="border-[#2B2F36] border rounded-md py-2 px-2 bg-white/5 cursor-pointer">Meet the Characthers</button>
+                    <Link href={"/books"}>
+                        <button className="bg-[#2B2F36] py-2 px-5 rounded-md  cursor-pointer flex items-center shadow-2xl  gap-1">Explore Books
+                            <IoMdArrowForward size={20} />
+                        </button>
+                    </Link>
+                    <Link href={"/characther"}><button className="border-[#2B2F36] border rounded-md py-2 px-2 bg-white/5 cursor-pointer">Meet the Characthers</button></Link>
+
                 </div>
             </div>
         </div>
