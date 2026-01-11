@@ -51,7 +51,9 @@ const Footer = () => {
                         <p className="text-[20px] font-semibold ">Stay Connected</p>
                         <p className="text-[#9D9A97] text-[14px]">Subscribe to receive updates about new releases. character insight, and exclusive content</p>
                         <Input className="bg-black" placeholder="Basic usage" />
-                        <Button name={"Subscribed"}></Button>
+                        <div className="mt-2">
+                            <Button name={"Subscribed"}></Button>
+                        </div>
                     </div>
                     {/* Connect With Us */}
                     <div className="space-y-5">
@@ -87,7 +89,7 @@ const Footer = () => {
                     <Link href={"/about-us"}>About Us</Link>
                     <Link href={"/privacy-policy"}>Privacy Policy</Link>
                     <Link href={"/terms-and-conditions"}>Terms & Condition</Link>
-                   
+
 
                 </div>
             </div>
