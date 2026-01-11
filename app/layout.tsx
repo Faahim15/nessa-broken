@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import 'antd/dist/reset.css';
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import AntdProvider from "./providers/AntdProvider";
 
 const geistSans = Inter({
   variable: "--font-inter",
@@ -26,12 +28,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} bg-background text-foreground  antialiased`}
       >
-        <Header />
-        <main className="md:pt-18">
+        <AntdProvider>
+          <Header />
+          <main className="md:pt-18">
 
-          {children}
-        </main>
-        <Footer />
+            {children}
+          </main>
+          <Footer />
+        </AntdProvider>
       </body>
     </html>
   );
