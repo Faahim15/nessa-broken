@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.px-4 {
+  padding-inline: calc(var(--spacing) * 0);
+}
+
+
+
+
+/* ant desing */
+
+:where(.css-dev-only-do-not-override-iecf5o).ant-input-outlined {
+  background-color: #131417 !important;
+  border-color: #4F4F59 !important;
+}
+
+:where(.css-dev-only-do-not-override-iecf5o).ant-input {
+  color: white;
+}
+
+/* Input Field */
+
+:where(.css-dev-only-do-not-override-iecf5o).ant-form-item .ant-form-item-label>label {
+  color: white
+}
+
+.white-placeholder::placeholder {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  /* Very important – Antd uses low opacity by default */
+}
+
+/* Cusotm modal for book detials */
+
+.custom-modal .ant-modal-content {
+  background-color: #131417;
+}
+
+:where(.css-dev-only-do-not-override-iecf5o).ant-modal .ant-modal-container {
+  background-color: #131417;
+}
+
+:where(.css-dev-only-do-not-override-iecf5o).ant-modal .ant-modal-close {
+  color: white;
+}
+
+:where(.css-dev-only-do-not-override-iecf5o).ant-modal .ant-modal-close:hover {
+  color: white !important;
+}
