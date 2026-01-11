@@ -72,3 +72,26 @@ body {
 :where(.css-dev-only-do-not-override-iecf5o).ant-modal .ant-modal-close:hover {
   color: white !important;
 }
+
+@keyframes wave {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-wave {
+  animation: wave 3s linear infinite;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+    margin-bottom: 10px !important;
+    font-weight: 500;
+}
+
+
+
+
