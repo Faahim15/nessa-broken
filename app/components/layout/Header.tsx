@@ -16,7 +16,7 @@ const Header = () => {
   const menuName = [
     { name: "Home", path: "/" },
     { name: "Books", path: "/books" },
-    { name: "Characther", path: "/characther" },
+    { name: "Character", path: "/characther" },
     { name: "World", path: "/world" },
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
