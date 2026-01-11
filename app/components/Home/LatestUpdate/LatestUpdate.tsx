@@ -25,17 +25,17 @@ const LatestUpdate = () => {
                 </div>
 
                 {/* Latest content section */}
-                <div className="grid grid-cols-1 md:grid-cols-2 mt-10 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 mt-10 gap-8 mb-10">
                     {
                         latestUpdate?.map((latest, i) => <div className="bg-[#2B2F36] p-4 rounded-md space-y-3" key={i + 1}>
                             <p className="text-[#9D9A97] text-xs">{latest?.date}</p>
                             <p className="text-[24px]">{latest?.title}</p>
                             <p className="text-[#9D9A97] text-sm">{latest?.description}</p>
-                            <button className='hover:text-[#9D9A97] duration-500'><Link href={"/all-characther"} className='flex items-center gap-1'>Read More <MdOutlineArrowForward size={20} /></Link></button>
+                            <button className='hover:text-[#9D9A97] duration-500'><Link href={"/blog"} className='flex items-center gap-1'>Read More <MdOutlineArrowForward size={20} /></Link></button>
                         </div>)
                     }
                 </div>
-                <button className='flex items-center  justify-center w-full hover:text-[#9D9A97] duration-500 mt-8'><Link href={"/all-characther"} className='flex items-center gap-1'>View All Post <MdOutlineArrowForward size={20} /></Link></button>
+                <button className='flex items-center  justify-center w-full hover:text-[#9D9A97] duration-500'><Link href={"/blog"} className='flex items-center gap-1'>View All Post <MdOutlineArrowForward size={20} /></Link></button>
             </div>
         </div>
     )
