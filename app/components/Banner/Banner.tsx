@@ -25,6 +25,9 @@ const Banner = () => {
                         </button>
                     </Link>
                     <Link href={"/characther"}><button className="border-[#2B2F36] border rounded-md py-2 px-2 bg-white/5 cursor-pointer">Meet the Characthers</button></Link>
+  
+
+
 
                 </div>
             </div>
