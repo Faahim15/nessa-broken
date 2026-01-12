@@ -34,7 +34,7 @@ const CoreTheme = () => {
             <div className='max-w-7xl mx-auto '>
                 {/* Core theme heading */}
                 <div className='text-center'>
-                    <p className='font-[georgia]  text-[40px]'>Core Themes</p>
+                    <p className='font-[georgia] text-[40px] text-white'>Core Themes</p>
                     <p className='text-[#9D9A97]'>The emotional foundations of a broken world</p>
                 </div>
                 {/* Core theme content */}

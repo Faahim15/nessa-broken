@@ -31,21 +31,21 @@ const Pagination: React.FC<{
   };
 
   return (
-    <div className="flex items-center justify-center space-x-4 mt-12">
+    <div className="flex items-center justify-center gap-x-4 mt-12">
       {/* Previous */}
       <button
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className="px-4 py-2 text-gray-400 hover:text-white disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
+        className="px-4 py-2 text-white/80! disabled:text-white/50! hover:text-white disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
       >
         Previous
       </button>
 
       {/* Pages */}
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center gap-x-2">
         {getPages().map((page, index) =>
           page === "..." ? (
-            <span key={`dots-${index}`} className="text-gray-600 px-2">
+            <span key={`dots-${index}`} className="text-white/80 px-2">
               ...
             </span>
           ) : (
@@ -55,7 +55,7 @@ const Pagination: React.FC<{
               className={`w-10 h-10 rounded-full transition-colors cursor-pointer ${
                 page === currentPage
                   ? "bg-white text-gray-900"
-                  : "    text-gray-400 hover:bg-gray-700"
+                  : "text-white/80! hover:bg-gray-700"
               }`}
             >
               {page}
@@ -68,7 +68,7 @@ const Pagination: React.FC<{
       <button
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className="px-4 py-2 text-gray-400 hover:text-white disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
+        className="px-4 py-2 text-white/80! disabled:text-white/50! hover:text-white disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
       >
         Next
       </button>

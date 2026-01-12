@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000;
+  --foreground: #fff;
 }
 
 @theme inline {
@@ -90,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0px;
     margin-bottom: 10px !important;
     font-weight: 500;
+    color: #ffffff;
 }
 
 
