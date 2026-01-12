@@ -78,7 +78,7 @@ const ContactPage = () => {
                     {/* Submit button */}
                     <button
                         onClick={handleContactUs}
-                        className='text-white bg-[#2B2F36] w-full flex items-center justify-center py-3 gap-2 rounded-md cursor-pointer'
+                        className='text-white! bg-[#2B2F36] w-full flex items-center justify-center py-3 gap-2 rounded-md cursor-pointer'
                     >
                         Send Message <BsSend />
                     </button>
