@@ -12,7 +12,7 @@ const VisualAtmosphere = () => {
             <div className='max-w-7xl mx-auto '>
                 {/* Visual Atmosphere heading */}
                 <div className='text-center'>
-                    <p className='font-[georgia]  text-[40px]'>Visual Atmosphere</p>
+                    <p className='font-[georgia] text-[40px] text-white'>Visual Atmosphere</p>
                     <p className='text-[#9D9A97]'>The mood and essence of our world</p>
                 </div>
 

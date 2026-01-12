@@ -1,6 +1,6 @@
 "use client";
 
-import { ConfigProvider } from "antd";
+import { ConfigProvider, theme } from "antd";
 import { StyleProvider } from "@ant-design/cssinjs";
 
 export default function AntdProvider({
@@ -12,6 +12,7 @@ export default function AntdProvider({
     <StyleProvider hashPriority="high">
       <ConfigProvider
         theme={{
+          algorithm: theme.darkAlgorithm,
           token: {
             colorPrimary: "#2563eb",
           },
