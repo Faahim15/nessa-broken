@@ -13,7 +13,7 @@ const WorldPage = () => {
         description="Discover the fractured reality of Nessa universe"
       />
 
-      <div className="bg-[#0C0E0F] container mx-auto pb-0! py-10 px-6 lg:px-0 sm:py-16 md:py-24">
+      <div className="container mx-auto pb-0! py-10 px-6 lg:px-0 sm:py-16 md:py-24">
         <WorldData />
 
         <CoreTheme />
