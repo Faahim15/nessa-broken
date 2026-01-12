@@ -11,25 +11,25 @@ const CoreTheme = () => {
       title: "Identity",
       description:
         "In a fractured world, the question Who am I? becomes both a burden and a liberation. Our characters struggle with the pieces of themselves they've lost and the selves they're becoming.",
-      icon: <IoMdHeartEmpty size={25} color="#2B2F36" />,
+      icon: <IoMdHeartEmpty size={25} color="#fff" />,
     },
     {
       title: "Loss",
       description:
         "Every ending carries the weight of what could have been. Loss shapes the landscape of this world—not as tragedy alone, but as transformation and the space for new beginnings.",
-      icon: <IoEyeOutline size={25} color="#2B2F36" />,
+      icon: <IoEyeOutline size={25} color="#fff" />,
     },
     {
       title: "Myth & Reality",
       description:
         "In a fractured world, the question Who am I? becomes both a burden and a liberation. Our characters struggle with the pieces of themselves they've lost and the selves they're becoming.",
-      icon: <HiOutlineCube size={25} color="#2B2F36" />,
+      icon: <HiOutlineCube size={25} color="#fff" />,
     },
     {
       title: "Choices",
       description:
         "Every decision fractures reality in subtle ways. The choices we make ripple through time, creating new paths while closing others forever.",
-      icon: <BsCollection size={25} color="#2B2F36" />,
+      icon: <BsCollection size={25} color="#fff" />,
     },
   ];
   return (
